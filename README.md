@@ -3,8 +3,7 @@
 (1)MCP介绍                                                                             
 (2)MCP功能测试,LLM(支持OpenAI接口风格的大模型)应用程序调用MCP               
 B站、YouTube搜索“南哥AGI研习社”关注我                  
-<img src="./banner.png" alt="" width="600" />       
-
+<img src="./banner.png" alt="" width="600" />          
 
 ## 1.2 MCP介绍                             
 MCP(模型上下文协议)是Claude开源的一种开放协议，可实现LLM应用程序与外部数据源和工具之间的无缝集成                              
