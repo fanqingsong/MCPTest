@@ -2,7 +2,7 @@
 ## 1.1、本次分享介绍                      
 (1)MCP介绍                                                                             
 (2)MCP功能测试,LLM(支持OpenAI接口风格的大模型)应用程序调用MCP               
-B站、YouTube搜索“南哥AGI研习社”关注我                  
+B站、YouTube搜索“**南哥AGI研习社**”关注我                  
 <img src="./logo.png" alt="" width="1400" />          
 
 ## 1.2 MCP介绍                             
