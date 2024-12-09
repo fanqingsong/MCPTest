@@ -18,7 +18,7 @@ server_params = StdioServerParameters(
     # 服务器执行的命令，这里是 python
     command="npx",
     # 启动命令的附加参数，这里是运行 example_server.py
-    args=["-y", "@modelcontextprotocol/server-filesystem", "/Users/janetjiang/Desktop/agi_code/MCPPreview/nangeAGICode/filesystem_basic"],
+    args=["-y", "@modelcontextprotocol/server-filesystem", "/Users/janetjiang/Desktop/agi_code/MCPTest/nangeAGICode/filesystem_basic"],
     # 环境变量，默认为 None，表示使用当前环境变量
     env=None
 )
