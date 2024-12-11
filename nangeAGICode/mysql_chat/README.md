@@ -4,6 +4,8 @@
 主要内容:MCP介绍、MCP功能测试,LLM(支持OpenAI接口风格的大模型)应用程序调用MCP               
 https://www.bilibili.com/video/BV1HBquYbE7t/                          
 https://youtu.be/Jmo7rgb_OXQ                     
+B站、YouTube搜索“**南哥AGI研习社**”关注我                   
+<img src="../../logo.png" alt="" width="1400" />            
 
 **本次分享介绍**                                
 使用MCP实现LLM应用程序Text2SQL功能操纵MySQL数据库                      
