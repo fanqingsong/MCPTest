@@ -1,3 +1,14 @@
+本期系列相关视频如下，按照发布的先后顺序:                      
+**(第一期)[2024.10.10]Claude重大突破！发布MCP(模型上下文协议)，带你在LLM应用程序脚本中感受它，无需使用Claude Desktop桌面软件，支持类OpenAI风格大模型**               
+主要内容:MCP介绍、MCP功能测试,LLM(支持OpenAI接口风格的大模型)应用程序调用MCP               
+https://www.bilibili.com/video/BV1HBquYbE7t/                          
+https://youtu.be/Jmo7rgb_OXQ                                         
+**(第二期)[2024.10.12]Claude MCP应用Text2SQL用例，带你在LLM应用程序中感受它的丝滑，无需使用Claude Desktop桌面软件，支持类OpenAI风格大模型**                   
+主要内容:使用MCP实现LLM应用程序Text2SQL功能操纵MySQL数据库                                                     
+https://www.bilibili.com/video/BV1ELq4YME8T/                                    
+https://youtu.be/yaLAqEMz45A               
+B站、YouTube搜索“**南哥AGI研习社**”关注我                              
+<img src="../../logo.png" alt="" width="1400" />                      
 # 1、项目介绍
 ## 1.1、本次分享介绍                      
 (1)MCP介绍                                                                             
