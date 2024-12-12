@@ -18,7 +18,8 @@ B站、YouTube搜索“**南哥AGI研习社**”关注我
 **(7)删除数据**                              
 **(8)统计数据量**                        
 本期视频:              
-https://youtu.be/yaLAqEMz45A                   
+https://www.bilibili.com/video/BV1ELq4YME8T/                     
+https://youtu.be/yaLAqEMz45A                              
 
 
 # 2、项目初始化
