@@ -7,7 +7,10 @@ https://youtu.be/Jmo7rgb_OXQ
 B站、YouTube搜索“**南哥AGI研习社**”关注我                   
 <img src="../../logo.png" alt="" width="1400" />            
 
-**本次分享介绍**                                
+**本次分享介绍**          
+本期视频:                    
+https://www.bilibili.com/video/BV1ELq4YME8T/                          
+https://youtu.be/yaLAqEMz45A                      
 使用MCP实现LLM应用程序Text2SQL功能操纵MySQL数据库                      
 **(1)列举可用资源**               
 **(2)获取某资源内容**                  
@@ -16,10 +19,7 @@ B站、YouTube搜索“**南哥AGI研习社**”关注我
 **(5)增加数据**                    
 **(6)修改数据**         
 **(7)删除数据**                              
-**(8)统计数据量**                        
-本期视频:              
-https://www.bilibili.com/video/BV1ELq4YME8T/                     
-https://youtu.be/yaLAqEMz45A                              
+**(8)统计数据量**                                              
 
 
 # 2、项目初始化
