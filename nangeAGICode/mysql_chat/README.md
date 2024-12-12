@@ -3,7 +3,7 @@
 **(第一期)[2024.10.10]Claude重大突破！发布MCP(模型上下文协议)，带你在LLM应用程序脚本中感受它，无需使用Claude Desktop桌面软件，支持类OpenAI风格大模型**               
 主要内容:MCP介绍、MCP功能测试,LLM(支持OpenAI接口风格的大模型)应用程序调用MCP               
 https://www.bilibili.com/video/BV1HBquYbE7t/                          
-https://youtu.be/Jmo7rgb_OXQ                     
+https://youtu.be/Jmo7rgb_OXQ                                       
 B站、YouTube搜索“**南哥AGI研习社**”关注我                   
 <img src="../../logo.png" alt="" width="1400" />            
 
@@ -17,6 +17,8 @@ B站、YouTube搜索“**南哥AGI研习社**”关注我
 **(6)修改数据**         
 **(7)删除数据**                              
 **(8)统计数据量**                        
+本期视频:              
+https://youtu.be/yaLAqEMz45A                   
 
 
 # 2、项目初始化
