@@ -10,7 +10,9 @@ https://www.bilibili.com/video/BV1ELq4YME8T/
 https://youtu.be/yaLAqEMz45A                   
 
 **本次分享介绍**                                
-使用MCP客户端实现访问多服务器，操纵文件系统和MySQL数据库                                                 
+使用MCP客户端实现访问多服务器，操纵文件系统和MySQL数据库                   
+相关视频:              
+https://youtu.be/tG-ZjOgrcSA                 
 
 
 # 2、项目初始化
