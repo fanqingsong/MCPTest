@@ -1,4 +1,3 @@
-                    
 # 1、项目介绍                  
 ## 1.1、主要内容                                     
 本期系列相关视频如下，按照发布的先后顺序:                      
@@ -13,9 +12,7 @@ https://youtu.be/yaLAqEMz45A
 **(第三期)[2024.12.12]Claude MCP应用客户端同时访问和调用多个服务器资源和工具，无需使用Claude Desktop桌面软件，支持类OpenAI风格大模型**           
 主要内容:MCP客户端同时访问多个MCP服务器，支持文件系统操作和Text2SQL功能操纵MySQL数据库                       
 https://www.bilibili.com/video/BV1oNqaYJEUy/                              
-https://youtu.be/tG-ZjOgrcSA                                  
-B站、YouTube搜索“**南哥AGI研习社**”关注我                                
-<img src="./logo.png" alt="" width="1400" />                                               
+https://youtu.be/tG-ZjOgrcSA                                                                                                                                                            
 
 ## 1.2 MCP介绍                             
 MCP(模型上下文协议)是Claude开源的一种开放协议，可实现LLM应用程序与外部数据源和工具之间的无缝集成                              
@@ -103,15 +100,16 @@ MCP使用JSON-RPC 2.0作为其格式。传输层负责将MCP协议消息转换�
 ## 2.1 开发环境搭建:anaconda、pycharm
 anaconda:提供python虚拟环境，官网下载对应系统版本的安装包安装即可                                      
 pycharm:提供集成开发环境，官网下载社区版本安装包安装即可                                               
-可参考如下视频进行安装，【大模型应用开发基础】集成开发环境搭建Anaconda+PyCharm                                                          
+**可参考如下视频:**                      
+集成开发环境搭建Anaconda+PyCharm                                                          
 https://www.bilibili.com/video/BV1q9HxeEEtT/?vd_source=30acb5331e4f5739ebbad50f7cc6b949                             
 https://youtu.be/myVgyitFzrA          
 
 ## 2.2 大模型相关配置
-(1)GPT大模型使用方案              
-(2)非GPT大模型(国产大模型)使用方案(OneAPI安装、部署、创建渠道和令牌)                 
-(3)本地开源大模型使用方案(Ollama安装、启动、下载大模型)                         
-可参考如下视频:                         
+(1)GPT大模型使用方案(第三方代理方式)                               
+(2)非GPT大模型(阿里通义千问、讯飞星火、智谱等大模型)使用方案(OneAPI方式)                         
+(3)本地开源大模型使用方案(Ollama方式)                                             
+**可参考如下视频:**                                   
 提供一种LLM集成解决方案，一份代码支持快速同时支持gpt大模型、国产大模型(通义千问、文心一言、百度千帆、讯飞星火等)、本地开源大模型(Ollama)                       
 https://www.bilibili.com/video/BV12PCmYZEDt/?vd_source=30acb5331e4f5739ebbad50f7cc6b949                 
 https://youtu.be/CgZsdK43tcY           
@@ -120,54 +118,94 @@ https://youtu.be/CgZsdK43tcY
 # 3、项目初始化
 ## 3.1 下载源码
 GitHub或Gitee中下载工程文件到本地，下载地址如下：                
-https://github.com/NanGePlus/MCPTest                                                               
-https://gitee.com/NanGePlus/MCPTest                                     
+https://github.com/NanGePlus/MCPTest                                                                    
+https://gitee.com/NanGePlus/MCPTest                                                              
 
 ## 3.2 构建项目
-使用pycharm构建一个项目，为项目配置虚拟python环境               
-项目名称：MCPTest                                                     
+使用pycharm构建一个项目，为项目配置虚拟python环境                       
+项目名称：MCPTest                          
+虚拟环境名称保持与项目名称一致                           
 
 ## 3.3 将相关代码拷贝到项目工程中           
-直接将下载的文件夹中的文件拷贝到新建的项目目录中               
+将下载的代码文件夹中的文件全部拷贝到新建的项目根目录下                             
 
-## 3.4 安装项目依赖                        
-命令行终端中执行如下命令安装依赖包                               
-pip install -r requirements.txt                      
+## 3.4 安装项目依赖                            
+新建命令行终端，在终端中运行 pip install -r requirements.txt 安装依赖                                                      
+**注意:** 建议先使用要求的对应版本进行本项目测试，避免因版本升级造成的代码不兼容。测试通过后，可进行升级测试                
      
 
-# 4、测试
-**核心演示示例介绍:Filesystem**                                       
+# 4、功能测试
+## 4.1 (第一期)[2024.12.10]测试步骤
+**核心演示示例介绍:Filesystem 使用官方提供的文件操作MCP服务器**                                       
 **描述:** 提供文件系统操作功能，包括读写文件、目录管理和文件搜索                 
-**工具:** read_file, write_file, create_directory, list_directory, move_file, search_files, get_file_info             
-**工具描述:**                  
-read_file: 读取文件内容，参数:path (文件路径)                 
-read_multiple_files 读取多个文件内容，参数:paths (文件路径数组)              
-write_file: 创建或覆写文件，参数: path (文件路径), content (文件内容)                           
-create_directory: 创建目录，参数: path (目录路径)                              
-list_directory: 列出目录内容，参数: path (目录路径)                          
-move_file: 移动/重命名文件，参数: source (源路径), destination (目标路径)                                
-search_files: 递归搜索文件，参数: path (起始路径), pattern (搜索模式)                               
-get_file_info: 获取文件元数据，参数: path (文件路径)                          
-对应的链接:https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem                
-
+**资源:** file://system 文件系统资源URI                                   
+**工具:** read_file, write_file, create_directory, list_directory, move_file, search_files, get_file_info                
+read_file:读取文件内容，参数:path (文件路径)                 
+read_multiple_files:读取多个文件内容，参数:paths (文件路径数组)              
+write_file:创建或覆写文件，参数: path (文件路径), content (文件内容)                           
+create_directory:创建目录，参数: path (目录路径)                              
+list_directory:列出目录内容，参数: path (目录路径)                          
+move_file:移动/重命名文件，参数: source (源路径), destination (目标路径)                                
+search_files:递归搜索文件，参数: path (起始路径), pattern (搜索模式)                               
+get_file_info:获取文件元数据，参数: path (文件路径)                          
+对应的链接:https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem                 
 **代码目录**                  
-脚本均放置在nangeAGICode目录内,运行对应脚本进行测试              
+脚本放置在nangeAGICode/basic、filesystem_basic、filesystem_chat目录内,运行对应脚本进行测试         
+**测试内容:**        
+我当前可以访问哪个文件夹                                              
+帮我创建一个test文件夹                                         
+帮我在test文件夹下创建一个文件test1.txt，内容为：南哥AGI研习社。                                                    
+把test1.txt中的内容agi改大写AGI。                                            
    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## 4.2 (第二期)[2024.12.12]测试步骤
+**核心演示示例介绍:Text2SQL 自定义操纵MySQL数据库的MCP服务器**                                                    
+**描述:** 提供Text2SQL功能操纵MySQL数据库                                      
+**资源:** mysql://{table[0]}/data 数据库表资源URI                                       
+**工具描述:** execute_sql                              
+execute_sql: 运行SQL脚本，参数:query (SQL语句)           
+**代码目录**                  
+脚本放置在nangeAGICode/mysql_chat目录内,运行对应脚本进行测试                 
+提供LLM对MySQL数据库操作功能，增、删、改、查                                                        
+**测试内容:**         
+(1)列举可用资源                                   
+当前可以访问哪些数据表            
+(2)获取某资源内容                             
+获取nange_agi这个表的内容            
+(3)列举可用的工具                                                
+当前可以使用哪些工具                        
+(4)查询                                             
+调用工具获取nange_agi这个表的内容                            
+(5)增加                                           
+随机帮我增加一条数据           
+调用工具获取nange_agi这个表的内容      
+(6)修改                               
+新增的那条数据把名称改为test             
+调用工具获取nange_agi这个表的内容      
+(7)删除                                        
+把刚新建的那条数据删除                                 
+调用工具获取nange_agi这个表的内容                     
+(8)统计数据量                                             
+这张表中一共几条数据                                      
+   
+## 4.3 (第三期)[2024.12.12]测试步骤
+**核心演示示例介绍:MCP客户端访问多个MCP服务器**                                                       
+**描述:** 结合前面两期的内容，对Filesystem和Text2SQL服务器进行融合使用                   
+**代码目录**                      
+脚本放置在nangeAGICode/mysql_filesystem_chat目录内,运行对应脚本进行测试    
+**测试内容:**                          
+当前可以访问哪些资源                           
+当前可以访问哪些表                            
+当前可以使用哪些工具                            
+创建一个test文件夹                              
+在test文件夹下创建一个文件test1.txt，内容为：用户名:NanGe003，密码：6543217890，内容：南哥AGI研习社++。                         
+获取nange_agi这个表的内容                              
+增加一条数据，数据内容为刚刚创建的test1.txt中的内容                                    
+获取nange_agi这个表的内容                                    
+这张表中一共几条数据                               
+新增的那条数据把名称改为test                                       
+获取nange_agi这个表的内容                                  
+把刚新建的那条数据删除                                    
+获取nange_agi这个表的内容                                
 
 
 
