@@ -12,7 +12,9 @@ https://youtu.be/yaLAqEMz45A
 **(第三期)[2024.12.12]Claude MCP应用客户端同时访问和调用多个服务器资源和工具，无需使用Claude Desktop桌面软件，支持类OpenAI风格大模型**           
 主要内容:MCP客户端同时访问多个MCP服务器，支持文件系统操作和Text2SQL功能操纵MySQL数据库                       
 https://www.bilibili.com/video/BV1oNqaYJEUy/                              
-https://youtu.be/tG-ZjOgrcSA                                                                                                                                                            
+https://youtu.be/tG-ZjOgrcSA                                                                                                                                        
+**(第四期)[2024.12.23]在线搜索\内容提取MCP服务器，MCP应用客户端同时访问和调用多个服务器资源和工具，无需使用Claude Desktop桌面软件，支持类OpenAI风格大模型**           
+主要内容:MCP客户端同时访问多个MCP服务器，支持文件系统操作、Text2SQL功能操纵MySQL数据库、在线搜索(DuckDuckGo搜索引擎)和网页内容提取                                                                    
 
 ## 1.2 MCP介绍                             
 MCP(模型上下文协议)是Claude开源的一种开放协议，可实现LLM应用程序与外部数据源和工具之间的无缝集成                              
@@ -207,6 +209,17 @@ execute_sql: 运行SQL脚本，参数:query (SQL语句)
 把刚新建的那条数据删除                                    
 获取nange_agi这个表的内容                                
 
-
-
-
+## 4.4 (第四期)[2024.12.23]测试步骤
+**核心演示示例介绍:在线搜索及获取链接内容 自定义在线搜索DuckDuckGo的MCP服务器及官方fetch MCP服务器**                                                                            
+**描述:** 提供在线搜索，并提前搜索结果中有关网页链接内容的提取和总结                                                                                          
+**工具描述:** duckduckgo_web_search、fetch                                                                               
+duckduckgo_web_search: 执行在线搜索，参数:query(搜索关键词);参数:max_results(最大返回内容数量)                                  
+fetch:从互联网获取 URL 并将其内容提取为markdown,参数:url(链接地址);参数:max_length(返回的最大字符数,默认值:5000);raw(获取原始内容而不进行Markdown转换,默认:false)                                         
+**代码目录**                       
+脚本放置在nangeAGICode/search_mysql_filesystem_chat目录内,运行对应脚本进行测试                              
+**测试内容:**                                       
+当前可以访问哪些资源                                                                          
+当前可以使用哪些工具                                                        
+搜索2024年有关AI的最新进展，内容要以中文输出，列出10条，且需要带上相关的链接                                                                        
+将这些内容写入到test.txt文件                                                                             
+获取第一条链接中的内容并进行总结                                                                             
