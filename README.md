@@ -13,8 +13,10 @@ https://youtu.be/yaLAqEMz45A
 主要内容:MCP客户端同时访问多个MCP服务器，支持文件系统操作和Text2SQL功能操纵MySQL数据库                       
 https://www.bilibili.com/video/BV1oNqaYJEUy/                              
 https://youtu.be/tG-ZjOgrcSA                                                                                                                                        
-**(第四期)[2024.12.23]在线搜索\内容提取MCP服务器，MCP应用客户端同时访问和调用多个服务器资源和工具，无需使用Claude Desktop桌面软件，支持类OpenAI风格大模型**           
-主要内容:MCP客户端同时访问多个MCP服务器，支持文件系统操作、Text2SQL功能操纵MySQL数据库、在线搜索(DuckDuckGo搜索引擎)和网页内容提取                                                                    
+**(第四期)[2024.12.23]DuckDuckGo在线搜索、Fetch内容提取MCP服务器，访问和调用多个服务器资源和工具，支持阿里通义千问大模型、GPT大模型、Ollama本地开源大模型**                  
+主要内容:MCP客户端同时访问多个MCP服务器，支持文件系统操作、Text2SQL功能操纵MySQL数据库、在线搜索(DuckDuckGo搜索引擎)和网页内容提取                  
+https://www.bilibili.com/video/BV1SckXY3E6S/                            
+https://youtu.be/9pzS9saNcGA                        
 
 ## 1.2 MCP介绍                             
 MCP(模型上下文协议)是Claude开源的一种开放协议，可实现LLM应用程序与外部数据源和工具之间的无缝集成                              
