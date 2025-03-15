@@ -2,7 +2,7 @@
   "mcpServers": {
     "filesystem": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/Users/janetjiang/Desktop/agi_code/MCPTest/nangeAGICode/filesystem_chat"]
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/home/song/workspace/me/MCPTest/nangeAGICode/filesystem_chat"]
     }
   }
 }

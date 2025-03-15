@@ -18,7 +18,7 @@ server_params = StdioServerParameters(
     # 服务器执行的命令，这里是 python
     command="npx",
     # 启动命令的附加参数，这里是运行 example_server.py
-    args=["-y", "@modelcontextprotocol/server-filesystem", "/Users/janetjiang/Desktop/agi_code/MCPTest/nangeAGICode/filesystem_basic"],
+    args=["-y", "@modelcontextprotocol/server-filesystem", "/home/song/workspace/me/MCPTest/nangeAGICode/filesystem_basic"],
     # 环境变量，默认为 None，表示使用当前环境变量
     env=None
 )
@@ -41,7 +41,7 @@ async def run():
 
             # 文件相关功能测试
             result = await session.call_tool("list_allowed_directories")
-            # result = await session.call_tool("create_directory", arguments={"path": "test"})
+            result = await session.call_tool("create_directory", arguments={"path": "test"})
             # result = await session.call_tool("write_file", arguments={"path": "test/test1.txt","content": "这里是南哥AGI研习社。测试1。" })
             # result = await session.call_tool("write_file", arguments={"path": "test/test1.txt","content": "这里是南哥AGI研习社。测试1plus。" })
             # result = await session.call_tool("write_file", arguments={"path": "test/test2.txt","content": "这里是南哥AGI研习社。测试2。" })
